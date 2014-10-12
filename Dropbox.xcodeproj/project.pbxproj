@@ -13,6 +13,7 @@
 		151CE2B719EB1E45009B1B9C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151CE2B619EB1E45009B1B9C /* Images.xcassets */; };
 		151CE2BA19EB1E45009B1B9C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CE2B819EB1E45009B1B9C /* LaunchScreen.xib */; };
 		151CE2C619EB1E45009B1B9C /* DropboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE2C519EB1E45009B1B9C /* DropboxTests.swift */; };
+		151CE2D219EB22D7009B1B9C /* Images-3.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151CE2D119EB22D7009B1B9C /* Images-3.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		151CE2BF19EB1E45009B1B9C /* DropboxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DropboxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		151CE2C419EB1E45009B1B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		151CE2C519EB1E45009B1B9C /* DropboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxTests.swift; sourceTree = "<group>"; };
+		151CE2D119EB22D7009B1B9C /* Images-3.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-3.xcassets"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				151CE2B319EB1E45009B1B9C /* Main.storyboard */,
 				151CE2B619EB1E45009B1B9C /* Images.xcassets */,
 				151CE2B819EB1E45009B1B9C /* LaunchScreen.xib */,
+				151CE2D119EB22D7009B1B9C /* Images-3.xcassets */,
 				151CE2AD19EB1E45009B1B9C /* Supporting Files */,
 			);
 			path = Dropbox;
@@ -195,6 +198,7 @@
 				151CE2B519EB1E45009B1B9C /* Main.storyboard in Resources */,
 				151CE2BA19EB1E45009B1B9C /* LaunchScreen.xib in Resources */,
 				151CE2B719EB1E45009B1B9C /* Images.xcassets in Resources */,
+				151CE2D219EB22D7009B1B9C /* Images-3.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,6 +340,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Dropbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -346,6 +351,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Dropbox/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -405,6 +411,7 @@
 				151CE2CB19EB1E45009B1B9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		151CE2CC19EB1E45009B1B9C /* Build configuration list for PBXNativeTarget "DropboxTests" */ = {
 			isa = XCConfigurationList;
@@ -413,6 +420,7 @@
 				151CE2CE19EB1E45009B1B9C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
