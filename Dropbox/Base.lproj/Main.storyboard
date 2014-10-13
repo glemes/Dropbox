@@ -283,7 +283,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="Mfk-lA-ktL" kind="modal" animates="NO" id="0L4-R8-xeP"/>
+                                    <segue destination="Mfk-lA-ktL" kind="modal" id="fZb-yM-Tpt"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -374,10 +374,10 @@
             </objects>
             <point key="canvasLocation" x="4427" y="1017"/>
         </scene>
-        <!--View Controller-->
+        <!--Done View Controller-->
         <scene sceneID="Nhb-RD-skH">
             <objects>
-                <viewController id="Mfk-lA-ktL" sceneMemberID="viewController">
+                <viewController id="Mfk-lA-ktL" customClass="DoneViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5rK-gS-npv">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -386,6 +386,13 @@
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zTO-Q5-ne4">
+                                <rect key="frame" x="263" y="28" width="50" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>

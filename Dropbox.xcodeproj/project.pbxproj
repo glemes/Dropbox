@@ -14,6 +14,7 @@
 		151CE2BA19EB1E45009B1B9C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 151CE2B819EB1E45009B1B9C /* LaunchScreen.xib */; };
 		151CE2C619EB1E45009B1B9C /* DropboxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE2C519EB1E45009B1B9C /* DropboxTests.swift */; };
 		151CE2D219EB22D7009B1B9C /* Images-3.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 151CE2D119EB22D7009B1B9C /* Images-3.xcassets */; };
+		151CE2D419EB63F9009B1B9C /* DoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE2D319EB63F9009B1B9C /* DoneViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 		151CE2C419EB1E45009B1B9C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		151CE2C519EB1E45009B1B9C /* DropboxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropboxTests.swift; sourceTree = "<group>"; };
 		151CE2D119EB22D7009B1B9C /* Images-3.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-3.xcassets"; sourceTree = "<group>"; };
+		151CE2D319EB63F9009B1B9C /* DoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DoneViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 				151CE2AF19EB1E45009B1B9C /* AppDelegate.swift */,
 				151CE2B119EB1E45009B1B9C /* ViewController.swift */,
 				151CE2B319EB1E45009B1B9C /* Main.storyboard */,
+				151CE2D319EB63F9009B1B9C /* DoneViewController.swift */,
 				151CE2B619EB1E45009B1B9C /* Images.xcassets */,
 				151CE2B819EB1E45009B1B9C /* LaunchScreen.xib */,
 				151CE2D119EB22D7009B1B9C /* Images-3.xcassets */,
@@ -217,6 +220,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				151CE2B219EB1E45009B1B9C /* ViewController.swift in Sources */,
+				151CE2D419EB63F9009B1B9C /* DoneViewController.swift in Sources */,
 				151CE2B019EB1E45009B1B9C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
