@@ -13,4 +13,4 @@ Time Spent: 5 hours total.
       * [x] User can tap the area for "Having trouble signing in?"
       * [x] User can log out from the Settings screen.
       
-![WalkThrough](DropboxApp.gif)
+
