@@ -1,20 +1,18 @@
 //
-//  DoneViewController.swift
+//  CreateAccountRootViewController.swift
 //  Dropbox
 //
-//  Created by Giovana Lemes on 10/12/14.
+//  Created by Giovana Lemes on 10/13/14.
 //  Copyright (c) 2014 Giovana Lemes. All rights reserved.
 //
 
 import UIKit
 
-class DoneViewController: UIViewController {
+class CreateAccountRootViewController: UIViewController {
 
-    @IBAction func onDoneButton(sender: AnyObject) {
-        dismissViewControllerAnimated(true, completion: nil)
-    }
     override func viewDidLoad() {
         super.viewDidLoad()
+        performSegueWithIdentifier("CreateAccountSegue", sender: self)
 
         // Do any additional setup after loading the view.
     }
