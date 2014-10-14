@@ -498,6 +498,16 @@
                                     <segue destination="Mfk-lA-ktL" kind="modal" id="fZb-yM-Tpt"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Whm-SO-eP4">
+                                <rect key="frame" x="108" y="478" width="111" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="wCJ-Wh-Cej" kind="modal" id="f6P-oY-4BC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -507,89 +517,119 @@
             </objects>
             <point key="canvasLocation" x="3861" y="360"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="67y-mi-xe7">
+        <!--Settings-->
+        <scene sceneID="giP-cN-I4b">
             <objects>
-                <viewController id="O8Q-t0-lYx" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Gvn-7C-UNJ">
+                <viewController title="Settings" id="6ik-St-QMC" customClass="SettingsCreateViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s8f-Mu-2gw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_files" id="vaL-YG-wvK">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="505"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="b26-Mc-uem">
-                                <rect key="frame" x="0.0" y="503" width="320" height="80"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="Vih-ip-j49">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" id="5y0-Ea-sQ8">
+                                        <rect key="frame" x="0.0" y="-102" width="320" height="772"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="settings_tab" id="Yo4-SO-BXn"/>
+                    <connections>
+                        <outlet property="scrollView" destination="Vih-ip-j49" id="5PD-ix-Luy"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Tnz-Q0-6eh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Baa-cO-Ssp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4299" y="-22"/>
+            <point key="canvasLocation" x="4804" y="443"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="OWL-hl-4qg">
+        <!--Favorites-->
+        <scene sceneID="2PP-jm-EY4">
             <objects>
-                <viewController id="Phr-i8-jnE" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Vb8-it-gu0">
+                <viewController title="Favorites" id="iqq-Af-KVk" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mCJ-VG-f7X">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_favorites" id="r8z-q6-WB5">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="508"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_favorites" id="XTq-qc-XRW">
+                                <rect key="frame" x="0.0" y="30" width="320" height="454"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Favorites" image="favorites_tab" id="fD1-HN-4Wg"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="23w-xv-Pob" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ALz-Aa-gNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4676" y="-22"/>
+            <point key="canvasLocation" x="5314" y="-23"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="ZyY-Bf-KXl">
+        <!--Photos-->
+        <scene sceneID="Qlm-LY-hj2">
             <objects>
-                <viewController id="o8s-Kg-Uee" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="vaF-dD-Mgd">
+                <viewController title="Photos" id="HtC-I2-jFv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="17H-ib-ugE">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_photos" id="0t9-fd-pk1">
-                                <rect key="frame" x="0.0" y="-58" width="320" height="568"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_photos" id="EJw-8P-6wG">
+                                <rect key="frame" x="0.0" y="32" width="320" height="454"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Photos" image="photos_tab" id="GQ1-xh-feO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dko-C6-jbM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="919-v0-XaL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5037" y="-23"/>
+            <point key="canvasLocation" x="5098" y="-667"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="F0p-QY-zLh">
+        <!--Dropbox-->
+        <scene sceneID="oMk-YN-Zd1">
             <objects>
-                <viewController id="tCd-x1-kfd" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uZF-aE-yZf">
+                <viewController title="Dropbox" id="fpG-Vd-fQR" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oF7-YM-qXM">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" id="vit-Hy-6dY">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="empty_files" id="cVy-bd-kiR">
+                                <rect key="frame" x="0.0" y="29" width="320" height="454"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Files" image="files_tab" id="4bk-Sa-VJh"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8AD-6g-tY2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pXL-TI-eqd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5397" y="-23"/>
+            <point key="canvasLocation" x="4682" y="-727"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="DBR-FL-KCQ">
+            <objects>
+                <tabBarController id="wCJ-Wh-Cej" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="TTO-hL-707">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="iqq-Af-KVk" kind="relationship" relationship="viewControllers" id="pbt-Yh-jAs"/>
+                        <segue destination="fpG-Vd-fQR" kind="relationship" relationship="viewControllers" id="lbT-Kb-x8P"/>
+                        <segue destination="HtC-I2-jFv" kind="relationship" relationship="viewControllers" id="DLu-qa-j43"/>
+                        <segue destination="6ik-St-QMC" kind="relationship" relationship="viewControllers" id="jef-LV-4MD"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KJH-pt-K0d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4310" y="32"/>
         </scene>
         <!--Done View Controller-->
         <scene sceneID="Nhb-RD-skH">
@@ -683,8 +723,12 @@
         <image name="empty_files" width="320" height="454"/>
         <image name="empty_photos" width="320" height="454"/>
         <image name="existing_files" width="320" height="454"/>
+        <image name="favorites_tab" width="30" height="30"/>
+        <image name="files_tab" width="30" height="30"/>
         <image name="logged_out" width="320" height="568"/>
+        <image name="photos_tab" width="30" height="30"/>
         <image name="settings" width="320" height="772"/>
+        <image name="settings_tab" width="30" height="30"/>
         <image name="sign_in1" width="320" height="568"/>
         <image name="sign_in2" width="320" height="568"/>
         <image name="sign_in3" width="320" height="568"/>
