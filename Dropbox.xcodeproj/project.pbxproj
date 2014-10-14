@@ -19,6 +19,7 @@
 		151CE2D819ECADA2009B1B9C /* CreateAccountRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE2D719ECADA2009B1B9C /* CreateAccountRootViewController.swift */; };
 		151CE2DA19ECAE7A009B1B9C /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE2D919ECAE7A009B1B9C /* SignInViewController.swift */; };
 		151CE2DC19ECB635009B1B9C /* SettingsCreateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE2DB19ECB635009B1B9C /* SettingsCreateViewController.swift */; };
+		151CE2DE19ECBC76009B1B9C /* SignInSegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151CE2DD19ECBC76009B1B9C /* SignInSegueViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		151CE2D719ECADA2009B1B9C /* CreateAccountRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountRootViewController.swift; sourceTree = "<group>"; };
 		151CE2D919ECAE7A009B1B9C /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		151CE2DB19ECB635009B1B9C /* SettingsCreateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsCreateViewController.swift; sourceTree = "<group>"; };
+		151CE2DD19ECBC76009B1B9C /* SignInSegueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInSegueViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 				151CE2AF19EB1E45009B1B9C /* AppDelegate.swift */,
 				151CE2B119EB1E45009B1B9C /* ViewController.swift */,
 				151CE2B319EB1E45009B1B9C /* Main.storyboard */,
+				151CE2DD19ECBC76009B1B9C /* SignInSegueViewController.swift */,
 				151CE2DB19ECB635009B1B9C /* SettingsCreateViewController.swift */,
 				151CE2D919ECAE7A009B1B9C /* SignInViewController.swift */,
 				151CE2D719ECADA2009B1B9C /* CreateAccountRootViewController.swift */,
@@ -233,6 +236,7 @@
 			files = (
 				151CE2DC19ECB635009B1B9C /* SettingsCreateViewController.swift in Sources */,
 				151CE2D819ECADA2009B1B9C /* CreateAccountRootViewController.swift in Sources */,
+				151CE2DE19ECBC76009B1B9C /* SignInSegueViewController.swift in Sources */,
 				151CE2B219EB1E45009B1B9C /* ViewController.swift in Sources */,
 				151CE2DA19ECAE7A009B1B9C /* SignInViewController.swift in Sources */,
 				151CE2D419EB63F9009B1B9C /* DoneViewController.swift in Sources */,

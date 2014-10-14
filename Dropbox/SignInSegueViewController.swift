@@ -1,5 +1,5 @@
 //
-//  SettingsCreateViewController.swift
+//  SignInSegueViewController.swift
 //  Dropbox
 //
 //  Created by Giovana Lemes on 10/13/14.
@@ -8,15 +8,11 @@
 
 import UIKit
 
-class SettingsCreateViewController: UIViewController {
+class SignInSegueViewController: UIViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
-
-    
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-        scrollView.contentSize = CGSize(width: 320, height: 800)
+        performSegueWithIdentifier("SignInSegue", sender: self)
 
         // Do any additional setup after loading the view.
     }

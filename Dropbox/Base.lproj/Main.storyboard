@@ -135,10 +135,10 @@
             </objects>
             <point key="canvasLocation" x="1533" y="360"/>
         </scene>
-        <!--Sign In Segue-->
+        <!--Sign In Segue View Controller-->
         <scene sceneID="1Dc-ef-HQT">
             <objects>
-                <viewController id="ai8-bY-r8Z" customClass="SignInSegue" sceneMemberID="viewController">
+                <viewController id="ai8-bY-r8Z" customClass="SignInSegueViewController" customModule="Dropbox" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nmD-XY-46Z">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -154,7 +154,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="4SE-jf-oBf" kind="push" id="neu-Sm-6sy"/>
+                                    <segue destination="4SE-jf-oBf" kind="push" identifier="SignInSegue" id="neu-Sm-6sy"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -530,9 +530,19 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings" id="5y0-Ea-sQ8">
-                                        <rect key="frame" x="0.0" y="-102" width="320" height="772"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="772"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="uUG-aZ-pTi">
+                                        <rect key="frame" x="0.0" y="695" width="320" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="mP1-Sl-R4F" kind="modal" id="efZ-64-y5x"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -540,7 +550,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="settings_tab" id="Yo4-SO-BXn"/>
                     <connections>
-                        <outlet property="scrollView" destination="Vih-ip-j49" id="5PD-ix-Luy"/>
+                        <outlet property="scrollView" destination="Vih-ip-j49" id="PRQ-ZD-fAd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Baa-cO-Ssp" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -742,4 +752,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination" type="retina4"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="efZ-64-y5x"/>
+    </inferredMetricsTieBreakers>
 </document>
